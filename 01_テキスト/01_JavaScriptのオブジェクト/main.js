@@ -19,8 +19,18 @@ const hikakin = {
 // const me = { name: 'あなたのなまえ' }
 
 // ブラウザのコンソールを開いてオブジェクトが正しく作れているか確認してみましょう👀
-
+const me = {
+  name: "あなたのなまえ",
+  age: 23,
+  hobbies: ["ポーカー", "お笑い", "麻雀"],
+  isHappy: true,
+  sayHello: function () {
+    console.log("こんにちは")
+  },
+}
+console.log(me)
 // console.log(me)
 
 // TRY: 練習問題２
 // hikakin オブジェクトに入っている sayHello メソッドを実行してください。
+hikakin.sayHello()
