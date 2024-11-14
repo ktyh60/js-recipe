@@ -1,0 +1,62 @@
+.calculate-buttons {
+  display: flex;
+  flex-direction: column; /* 縦並びにする */
+  gap: 10px; /* ボタン間の隙間 */
+  align-items: center; /* 中央に揃えたい場合 */
+}
+
+.calculate-buttons button.symbol {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.button-area {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  max-width: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3列で配置 */
+  gap: 10px; /* ボタン間の隙間 */
+}
+
+.key {
+  width: 65px;
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#display_area {
+  max-width: 350px;
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid black; /* 黒の枠線 */
+  padding: 10px; /* 内側の余白 */
+  border-radius: 10px;
+}
+#all_area {
+  max-width: 50%;
+  justify-content: center;
+  align-items: stretch;
+}
