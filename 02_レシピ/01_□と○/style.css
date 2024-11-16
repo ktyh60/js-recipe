@@ -1,12 +1,25 @@
 .square {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: black;
+  background-position: bottom left, top left, top right, bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
 }
 
 .rounded {
-  border-radius: 50px;
+  border-radius: 100px;
 }
+.triangled {
+  background: linear-gradient(120deg, transparent 50px, #000 0px),
+    linear-gradient(120deg, transparent 100px, #000 0px),
+    linear-gradient(240deg, transparent 100px, #000 0px),
+    linear-gradient(240deg, transparent 50px, #000 0px);
+  background-position: bottom left, top left, top right, bottom right;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+
 .transition {
   transition: all 1s;
 }

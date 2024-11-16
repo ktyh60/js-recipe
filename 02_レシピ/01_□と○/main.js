@@ -1,17 +1,22 @@
-const squareButton = document.getElementById("square-button")
-const circleButton = document.getElementById("circle-button")
-
 const figure = document.getElementById("figure")
+// figure.addEventListener("click", function () {
+//   if (figure.classList.contains("triangled")) {
+//     figure.classList.remove("triangled")
+//   } else if (figure.classList.contains("rounded")) {
+//     figure.classList.add("triangled")
+//     figure.classList.remove("rounded")
+//   } else {
+//     figure.classList.add("rounded")
+//   }
+// })
 
 figure.onclick = function () {
-  figure.classList.toggle("rounded")
-}
-circleButton.onclick = function () {
-  // figure に rounded クラスを追加する
-  figure.classList.add("rounded")
-}
-
-squareButton.onclick = function () {
-  // figure から rounded クラスを削除する
-  figure.classList.remove("rounded")
+  if (figure.classList.contains("triangled")) {
+    figure.classList.remove("triangled")
+  } else if (figure.classList.contains("rounded")) {
+    figure.classList.add("triangled")
+    figure.classList.remove("rounded")
+  } else {
+    figure.classList.add("rounded")
+  }
 }
