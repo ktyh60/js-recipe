@@ -7,10 +7,20 @@
     <title>Fetch JSON</title>
   </head>
   <body>
-    <h2>ワンちゃんの登場です！</h2>
+    <h2>ネコちゃんの登場です！</h2>
     <div>
-      <img src="" alt="おねんね中" id="dog-image" />
+      <img src="" alt="おねんね中" id="cat-image" />
     </div>
+    <button id="reflesh">reflesh</button>
+    <h2>ワンちゃんを選ぼう!</h2>
+    <div id="dog-image"></div>
+    <form>
+      <label for="options">犬種と枚数を選択してください:</label>
+      <select id="options" name="option"></select>
+      <input type="number" id="picture-number" />
+
+      <button type="button" id="dog-choice">送信</button>
+    </form>
 
     <script src="main.js"></script>
   </body>

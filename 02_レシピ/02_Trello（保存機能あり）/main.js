@@ -3,6 +3,9 @@ const container = document.getElementById("cards-container")
 const addButton = document.getElementById("add-button")
 let memo = []
 addButton.onclick = function () {
+  if (inputElement.value === "") {
+    return
+  }
   memo.push(inputElement.value)
   container.textContent = ""
   inputElement.value = ""
